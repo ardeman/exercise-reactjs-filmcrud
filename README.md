@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is created using
+This project is created using:
 ```
 node v14.17.3
 npm v6.14.13
