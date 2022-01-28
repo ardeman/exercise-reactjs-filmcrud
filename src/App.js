@@ -269,16 +269,13 @@ const App = () => {
                             {data
                                 .filter(
                                     (value) =>(
-                                        value !== null &&
-                                        value.title
-                                            .toLowerCase()
-                                            .includes(
-                                                filterTitle.toLowerCase()
-                                            ) &&
-                                        value.genre
-                                            .toLowerCase()
-                                            .includes(filterGenre.toLowerCase())
-                                            || value === null)
+                                        (
+                                            value !== null &&
+                                            value.title.toLowerCase().includes(filterTitle.toLowerCase()) &&
+                                            value.genre.toLowerCase().includes(filterGenre.toLowerCase())
+                                        ) || 
+                                        value === null
+                                    )
                                 )
                                 .map((value, index) =>
                                     value !== null && (
