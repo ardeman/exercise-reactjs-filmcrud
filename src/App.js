@@ -61,7 +61,7 @@ const App = () => {
     const getData = async () => {
         try {
             const response = await axios.get(
-                "https://andywiranata-42555.firebaseio.com/test-frontend/items.json"
+                "https://github-exercise-c070e-default-rtdb.asia-southeast1.firebasedatabase.app/filmCrud.json"
             );
             console.log(response);
             setData(response.data);
@@ -79,7 +79,7 @@ const App = () => {
         ) {
             try {
                 const response = await axios.put(
-                    `https://andywiranata-42555.firebaseio.com/test-frontend/items/${index}.json`,
+                    `https://github-exercise-c070e-default-rtdb.asia-southeast1.firebasedatabase.app/filmCrud/${index}.json`,
                     {
                         ...inputData,
                     }
@@ -102,9 +102,9 @@ const App = () => {
         ) {
             try {
                 // const response = await axios.post(
-                //     `https://andywiranata-42555.firebaseio.com/test-frontend/items.json`,
+                //     `https://github-exercise-c070e-default-rtdb.asia-southeast1.firebasedatabase.app/filmCrud.json`,
                 const response = await axios.put(
-                    `https://andywiranata-42555.firebaseio.com/test-frontend/items/${data.length}.json`,
+                    `https://github-exercise-c070e-default-rtdb.asia-southeast1.firebasedatabase.app/filmCrud/${data.length}.json`,
                     {
                         ...formData,
                     }
@@ -127,7 +127,7 @@ const App = () => {
     const handleDelete = async (index) => {
         try {
             const response = await axios.delete(
-                `https://andywiranata-42555.firebaseio.com/test-frontend/items/${index}.json`
+                `https://github-exercise-c070e-default-rtdb.asia-southeast1.firebasedatabase.app/filmCrud/${index}.json`
             );
             console.log(response);
         } catch (error) {
